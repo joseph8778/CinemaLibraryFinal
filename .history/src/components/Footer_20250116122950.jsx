@@ -8,15 +8,15 @@ const Footer = () => {
             <div className="row">
                 <div className="footer__wrapper">
                     <div className="footer__top--wrapper">
-        <div className="footer__logolink--wrapper">
-
+                
                     <img src={logo} className='footer_logo' alt="" />         
 
-            <div className="directLinks__wrapper--desktop">
+            <div className="directLinks__wrapper">
                 <FooterDirectLinks type='Company'/>
                 <FooterDirectLinks type='Security'/>
                 <FooterDirectLinks type='Partners'/>
                 <FooterDirectLinks type='Resources'/>
+
             </div>
                 <form className="footer__signup--wrapper">
                     <h1 className='NLTitle'>Newsletter Signup</h1>
@@ -26,13 +26,6 @@ const Footer = () => {
                     onClick={() => alert('Newsletter signup complete!')}
                     >Sign up</button>
                 </form>
-            </div>
-            <div className="directLinks__wrapper">
-                <FooterDirectLinks type='Company'/>
-                <FooterDirectLinks type='Security'/>
-                <FooterDirectLinks type='Partners'/>
-                <FooterDirectLinks type='Resources'/>
-            </div>
                 </div>
 
                     <div className="footer__bottom--wrapper">

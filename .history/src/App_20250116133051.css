@@ -341,7 +341,6 @@ footer{
   justify-content: space-between;
   align-items: start;
 
-  width: 100%;
   display: none;
 }
 .directLinks__wrapper--desktop {
@@ -920,6 +919,7 @@ footer{
 }
 @media (max-width: 750px) {
 
+
     .movie__details__title {
         font-size: 24px;
     }
@@ -961,11 +961,7 @@ footer{
   }
 
   .footer__logolink--wrapper {
-    align-items: center;
-  }
-
-  .directLinks__wrapper {
-    margin-top: 64px;
+    justify-content: center;
   }
 }
 

@@ -341,7 +341,6 @@ footer{
   justify-content: space-between;
   align-items: start;
 
-  width: 100%;
   display: none;
 }
 .directLinks__wrapper--desktop {
@@ -887,7 +886,7 @@ footer{
   .footer__logolink--wrapper {
    flex-direction: column;
    align-items: start;
-   width: auto;
+   wid
   }
 
   .footer__signup--wrapper {
@@ -898,12 +897,6 @@ footer{
   .directLinks__wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 14px;
-    margin-left: 14px;
-  }
-
-  .footer__direct-links {
-    margin-left: 12px;
   }
   .directLinks__wrapper--desktop {
     display: none;
@@ -919,6 +912,7 @@ footer{
     }
 }
 @media (max-width: 750px) {
+
 
     .movie__details__title {
         font-size: 24px;
@@ -952,21 +946,6 @@ footer{
       .movie__description__wrapper {
         font-size: 12px;
     }
-}
-
-@media (max-width: 575px) {
-  .footer__top--wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer__logolink--wrapper {
-    align-items: center;
-  }
-
-  .directLinks__wrapper {
-    margin-top: 64px;
-  }
 }
 
 @media (max-width: 500px) {

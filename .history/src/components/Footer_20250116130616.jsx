@@ -12,7 +12,7 @@ const Footer = () => {
 
                     <img src={logo} className='footer_logo' alt="" />         
 
-            <div className="directLinks__wrapper--desktop">
+            <div className="directLinks__wrapper">
                 <FooterDirectLinks type='Company'/>
                 <FooterDirectLinks type='Security'/>
                 <FooterDirectLinks type='Partners'/>
@@ -27,13 +27,7 @@ const Footer = () => {
                     >Sign up</button>
                 </form>
             </div>
-            <div className="directLinks__wrapper">
-                <FooterDirectLinks type='Company'/>
-                <FooterDirectLinks type='Security'/>
-                <FooterDirectLinks type='Partners'/>
-                <FooterDirectLinks type='Resources'/>
-            </div>
-                </div>
+                {/* </div> */}
 
                     <div className="footer__bottom--wrapper">
                             <h1>

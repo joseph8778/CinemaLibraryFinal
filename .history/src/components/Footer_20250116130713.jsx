@@ -12,7 +12,7 @@ const Footer = () => {
 
                     <img src={logo} className='footer_logo' alt="" />         
 
-            <div className="directLinks__wrapper--desktop">
+            <div className="directLinks__wrapper">
                 <FooterDirectLinks type='Company'/>
                 <FooterDirectLinks type='Security'/>
                 <FooterDirectLinks type='Partners'/>
@@ -26,12 +26,13 @@ const Footer = () => {
                     onClick={() => alert('Newsletter signup complete!')}
                     >Sign up</button>
                 </form>
-            </div>
+
             <div className="directLinks__wrapper">
                 <FooterDirectLinks type='Company'/>
                 <FooterDirectLinks type='Security'/>
                 <FooterDirectLinks type='Partners'/>
                 <FooterDirectLinks type='Resources'/>
+            </div>
             </div>
                 </div>
 
