@@ -1256,6 +1256,9 @@ h4 {
       margin: 10px 0 10px 0;
     }
 
+    .footer__bottom--wrapper {
+      flex-direction: column;
+    }
   
   }
   

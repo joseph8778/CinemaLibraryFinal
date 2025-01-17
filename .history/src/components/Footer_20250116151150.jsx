@@ -18,8 +18,9 @@ const Footer = () => {
                 <FooterDirectLinks type='Partners'/>
                 <FooterDirectLinks type='Resources'/>
             </div>
-                <form onSubmit={() => alert('Newsletter signup complete!')} className="footer__signup--wrapper">
+                <form className="footer__signup--wrapper">
                     <h1 className='NLTitle'>Newsletter Signup</h1>
+                    <input className='NLBox NLName' type="text" placeholder='Name' />
                     <input className='NLBox NLEmail' type="email"  placeholder='Email'/>
                     <button type='submit' className='NLButton'
               
