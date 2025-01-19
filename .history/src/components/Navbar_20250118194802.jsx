@@ -69,7 +69,7 @@ const Nav = ({ quantity, user }) => {
                 border="2px solid white"
                 variant="solid"
                 onClick={() => {
-                  if (window.innerWidth < 575) {
+                  if (window.innerwidth < 575) {
                     setSandwichToggle(true);
                     console.log('sandwich')
                    }else {
