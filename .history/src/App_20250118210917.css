@@ -986,10 +986,6 @@ footer{
     .movie__description__wrapper {
         font-size: 14px;
     }
-
-    .signin_wrapper, .signup__wrapper {
-      min-width: 0;
-    }
 }
 
 @media (max-width: 675px) {

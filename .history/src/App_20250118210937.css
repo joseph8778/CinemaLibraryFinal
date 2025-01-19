@@ -987,9 +987,7 @@ footer{
         font-size: 14px;
     }
 
-    .signin_wrapper, .signup__wrapper {
-      min-width: 0;
-    }
+    .signin_wrapper, .signup
 }
 
 @media (max-width: 675px) {

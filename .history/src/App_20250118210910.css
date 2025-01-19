@@ -594,7 +594,7 @@ footer{
     padding: 44px;
     border-radius: 3%;
 
-    min-width: 600px;
+    min-width: 400px;
     height: 500px;
 }
 
@@ -985,10 +985,6 @@ footer{
     }
     .movie__description__wrapper {
         font-size: 14px;
-    }
-
-    .signin_wrapper, .signup__wrapper {
-      min-width: 0;
     }
 }
 

@@ -594,7 +594,6 @@ footer{
     padding: 44px;
     border-radius: 3%;
 
-    min-width: 600px;
     height: 500px;
 }
 
@@ -616,7 +615,8 @@ footer{
 .signin__signup--wrapper {
     display: flex;
     justify-content: center;
-    
+    flex-direction: column;
+    align-items: center;
     font-size: 14px;
     margin-top: 18px;
 }
@@ -986,10 +986,6 @@ footer{
     .movie__description__wrapper {
         font-size: 14px;
     }
-
-    .signin_wrapper, .signup__wrapper {
-      min-width: 0;
-    }
 }
 
 @media (max-width: 675px) {
@@ -1077,11 +1073,6 @@ footer{
     
     .social-icons_wrapper {
       font-size: 12px;
-    }
-
-    .signin__signup--wrapper {
-      flex-direction: column;
-      align-items: center;
     }
 }
   
