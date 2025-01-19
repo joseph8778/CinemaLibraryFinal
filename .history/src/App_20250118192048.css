@@ -1120,21 +1120,8 @@ footer{
     }
   
     .search__movie {
-      height: 60%;
-    }
-
-    .movie__details__wrapper {
-      margin-left: 0;
-      width: 100%;
-    }
-
-    .selected__container {
-      flex-direction: column;
-      justify-content:inherit;
-
-    align-items: center;
-
-    
+      height: 70%;
+      width: 70%;
     }
   }
 

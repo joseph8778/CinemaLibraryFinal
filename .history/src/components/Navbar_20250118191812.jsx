@@ -11,6 +11,7 @@ const Nav = ({ quantity, user }) => {
   const menuRef = useRef(null);
   const [sandwichToggle, setSandwichToggle] = useState(false);
 
+
   
 
   const toggleMenu = () => {

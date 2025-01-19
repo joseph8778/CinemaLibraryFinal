@@ -1,16 +1,16 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { signOut } from "firebase/auth";
 import { auth } from '../firebase/init';
 import { Avatar } from "./ui/avatar";
 import { Box, Button } from '@chakra-ui/react';
 import logo from '../assets/logo.svg';
+import { h1 } from 'framer-motion/client';
 
 const Nav = ({ quantity, user }) => {
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef(null);
   const [sandwichToggle, setSandwichToggle] = useState(false);
-
   
 
   const toggleMenu = () => {
@@ -74,14 +74,7 @@ const Nav = ({ quantity, user }) => {
                   colorPalette="red"
                   border="2px solid white"
                   variant="solid"
-                  onClick={() =>{ 
-                  if (window.screen.width < 575) {
-                    setSandwichToggle(true)
-                  } else {
-                    toggleMenu();
-                  }  
-
-                  }}
+                  onClick={() => setSandwichToggle(true)}
                   size="sm"
                   name={user.email}
                 />
@@ -135,24 +128,18 @@ const Nav = ({ quantity, user }) => {
           <Link onClick={() => setSandwichToggle(false)} to='/search'>
           <h1 className='sandwich__option'>Directory</h1>
           </Link>
+          <Link onClick={() => setSandwichToggle(false)} to='/signin'>
 
           { user ? (
-            <h1 className='sandwich__option'
-            onClick={() => {
-              setSandwichToggle(false);
-              logout();
-            }}
-            >Sign out</h1>
+            h1
 
           ) : (
-            <>
-            <Link onClick={() => setSandwichToggle(false)} to='/signin'>
+
           <h1 className='sandwich__option'>Sign in</h1>
           </Link>
           <Link onClick={() => setSandwichToggle(false)} to='/signup'>
           <h1 className='sandwich__option'>Sign up</h1>
           </Link>
-          </>
           
           )
 

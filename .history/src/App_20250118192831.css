@@ -1125,16 +1125,12 @@ footer{
 
     .movie__details__wrapper {
       margin-left: 0;
-      width: 100%;
+      justify-content: center;
+      align-items: center;
     }
 
     .selected__container {
       flex-direction: column;
-      justify-content:inherit;
-
-    align-items: center;
-
-    
     }
   }
 

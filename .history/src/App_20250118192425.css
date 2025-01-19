@@ -1123,18 +1123,13 @@ footer{
       height: 60%;
     }
 
-    .movie__details__wrapper {
-      margin-left: 0;
-      width: 100%;
+    .movie__poster {
+      min-width: 100px;
+      height: 50%;
     }
 
     .selected__container {
-      flex-direction: column;
-      justify-content:inherit;
-
-    align-items: center;
-
-    
+      
     }
   }
 

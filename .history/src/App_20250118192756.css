@@ -1124,17 +1124,11 @@ footer{
     }
 
     .movie__details__wrapper {
-      margin-left: 0;
-      width: 100%;
+      margin-left: 4px;
     }
 
     .selected__container {
       flex-direction: column;
-      justify-content:inherit;
-
-    align-items: center;
-
-    
     }
   }
 

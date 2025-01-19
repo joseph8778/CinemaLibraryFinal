@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { signOut } from "firebase/auth";
 import { auth } from '../firebase/init';
@@ -10,7 +10,6 @@ const Nav = ({ quantity, user }) => {
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef(null);
   const [sandwichToggle, setSandwichToggle] = useState(false);
-
   
 
   const toggleMenu = () => {
@@ -75,11 +74,8 @@ const Nav = ({ quantity, user }) => {
                   border="2px solid white"
                   variant="solid"
                   onClick={() =>{ 
-                  if (window.screen.width < 575) {
+                  if (window.screen.width )  
                     setSandwichToggle(true)
-                  } else {
-                    toggleMenu();
-                  }  
 
                   }}
                   size="sm"

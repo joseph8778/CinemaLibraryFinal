@@ -167,52 +167,6 @@ nav {
 .fa-bars {
   color: white;
   display: none;
-
-  font-size: 28px;
-}
-
-.sandwichMenu__wrapper {
-  background-color: black;
-  width: 100%;
-  height: 100%;
-
-  display: none;
-  position: fixed;
-  z-index: 100;
-
-  right: 0;
-  top: 0;
-}
-
-.sandwich__options--wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-
-  padding: 24px;
-}
-
-.sandwich__option {
-  font-size: 28px;
-  margin-bottom: 24px;
-
-  transition: all .1s ease;
-}
-
-.sandwich__option:active {
-  margin-left: 12px;
-  border-bottom: 2px solid white;
-}
-
-.exit__container {
-  display: flex;
-  justify-content: end;
-}
-
-.fa-xmark {
-  font-size: 32px;
-  padding: 8px;
 }
 
 .logo_svg {
@@ -1029,17 +983,12 @@ footer{
   }
 
   .fa-bars {
-    display: block;
+    d
   }
 
   .homenav, .searchnav, .signup__button, .signin__button {
     display: none;
   }
-
-  .sandwichMenu__wrapper {
-    display: block;
-  }
-
 }
 
 @media (max-width: 500px) {
@@ -1120,21 +1069,8 @@ footer{
     }
   
     .search__movie {
-      height: 60%;
-    }
-
-    .movie__details__wrapper {
-      margin-left: 0;
       width: 100%;
-    }
-
-    .selected__container {
-      flex-direction: column;
-      justify-content:inherit;
-
-    align-items: center;
-
-    
+      margin: 1rem;
     }
   }
 

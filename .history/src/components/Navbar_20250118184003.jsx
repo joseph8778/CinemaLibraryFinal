@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { signOut } from "firebase/auth";
 import { auth } from '../firebase/init';
@@ -9,9 +9,6 @@ import logo from '../assets/logo.svg';
 const Nav = ({ quantity, user }) => {
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef(null);
-  const [sandwichToggle, setSandwichToggle] = useState(false);
-
-  
 
   const toggleMenu = () => {
     setShowMenu(prev => !prev);
@@ -22,6 +19,9 @@ const Nav = ({ quantity, user }) => {
     setShowMenu(false);
   };
 
+  const openMenu = () => {
+
+  }
 
   return (
     <nav>
@@ -74,14 +74,7 @@ const Nav = ({ quantity, user }) => {
                   colorPalette="red"
                   border="2px solid white"
                   variant="solid"
-                  onClick={() =>{ 
-                  if (window.screen.width < 575) {
-                    setSandwichToggle(true)
-                  } else {
-                    toggleMenu();
-                  }  
-
-                  }}
+                  onClick={toggleMenu}
                   size="sm"
                   name={user.email}
                 />
@@ -104,9 +97,8 @@ const Nav = ({ quantity, user }) => {
           ) : (
             <div className="sign__buttons--wrapper">
               <i className="fa-solid fa-bars"
-             onClick={() => {
-              setSandwichToggle(true)
-             }}
+             onClick={() => openMenu()}
+             
              ></i>
               <Link to="/signin">
                 <div className="signin__button">Sign in</div>
@@ -118,50 +110,10 @@ const Nav = ({ quantity, user }) => {
           )}
         </div>
       </div>
-{sandwichToggle ? (
-      <div className="sandwichMenu__wrapper">
-        <div className="sandwich__container">
-        <div className="exit__container">
-        <i class="fa-solid fa-xmark" Style="color: #ffffff;"
-        onClick={() => setSandwichToggle(false)}
-        ></i>
-        </div>
 
-        <div className="sandwich__options--wrapper">
-          
-          <Link onClick={() => setSandwichToggle(false)} to='/'>
-          <h1 className='sandwich__option'>Home</h1>
-          </Link>
-          <Link onClick={() => setSandwichToggle(false)} to='/search'>
-          <h1 className='sandwich__option'>Directory</h1>
-          </Link>
-
-          { user ? (
-            <h1 className='sandwich__option'
-            onClick={() => {
-              setSandwichToggle(false);
-              logout();
-            }}
-            >Sign out</h1>
-
-          ) : (
-            <>
-            <Link onClick={() => setSandwichToggle(false)} to='/signin'>
-          <h1 className='sandwich__option'>Sign in</h1>
-          </Link>
-          <Link onClick={() => setSandwichToggle(false)} to='/signup'>
-          <h1 className='sandwich__option'>Sign up</h1>
-          </Link>
-          </>
-          
-          )
-
-          }
-        </div>
-        </div>
+      <div className="sandwichMenu__wrapper ">
+        
       </div>
-) : (null)
-}
     </nav>
   );
 };

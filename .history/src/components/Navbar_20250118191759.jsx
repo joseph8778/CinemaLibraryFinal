@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { signOut } from "firebase/auth";
 import { auth } from '../firebase/init';
@@ -11,6 +11,13 @@ const Nav = ({ quantity, user }) => {
   const menuRef = useRef(null);
   const [sandwichToggle, setSandwichToggle] = useState(false);
 
+  useEffect(() => {
+    
+    
+    return () => {
+      
+    };
+  }, []);
   
 
   const toggleMenu = () => {
